@@ -1,0 +1,25 @@
+{
+  "name": "snakegame",
+  "version": "1.0.0",
+  "description": "Snake game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillt/snakegame.git"
+  },
+  "type": "module",
+  "author": "PB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillt/snakegame/issues"
+  },
+  "homepage": "https://github.com/phillt/snakegame#readme",
+  "devDependencies": {
+    "@sinonjs/referee": "^9.1.1",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  }
+}
