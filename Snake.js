@@ -1,3 +1,17 @@
-class Snake {}
+class Snake {
+    #body;
+    #head;
 
-module.exports = Snake;
+    constructor() {
+    }
+
+    set body(body) {
+        this.#body = body;
+    }
+
+    set head(head) {
+        this.#head = head;
+    }
+}
+
+export default Snake;
