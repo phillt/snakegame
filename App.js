@@ -11,7 +11,7 @@ class App {
         const requestBody = new SnakeRequest(body);
         const getBoard = requestBody.board;
 
-        const mover = new Move(requestBody.mySnake, requestBody.allSnakes, requestBody.board);
+        const mover = new Move(requestBody.you, requestBody.allSnakes, requestBody.board);
 
     }
 }
