@@ -8,6 +8,7 @@ class App {
     }
 
     move(body) {
+        // const mover = new EatFoodMove(body.you, body.board.snakes, body.board);
         const mover = new Move(body.you, body.board.snakes, body.board);
 
         return mover.getMove();
