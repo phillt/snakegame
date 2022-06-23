@@ -10,7 +10,6 @@ class Move {
     }
 
     getMove() {
-        const head = this.#getHead();
         const possibleMoves = this.#getPossibleMovesFromHead();
 
         const validMoves = [];
@@ -23,7 +22,7 @@ class Move {
             }
         );
 
-        return validMoves[0];
+        return validMoves[Math.floor(Math.random()*validMoves.length)];
     }
 
     #isSpaceOpen({x, y}) {
