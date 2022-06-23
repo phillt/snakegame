@@ -13,6 +13,7 @@ class App {
 
         const mover = new Move(requestBody.mySnake, requestBody.allSnakes, requestBody.board);
 
+        return mover.getMove();
     }
 }
 
