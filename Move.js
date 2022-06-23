@@ -3,6 +3,12 @@ class Move {
     #snake;
     #board;
 
+    /**
+     *
+     * @param snake
+     * @param snakes
+     * @param board
+     */
     constructor(snake, snakes, board) {
         this.#snake = snake;
         this.#snakes = snakes;
