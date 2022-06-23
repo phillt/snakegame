@@ -1,4 +1,5 @@
 import Move from "./Move.js";
+import EatFoodMove from "./EatFoodMove.js";
 
 class App {
 

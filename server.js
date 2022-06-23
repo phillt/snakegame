@@ -17,7 +17,7 @@ server.get('/', (req, res) => {
     res.json({
         apiversion: "1",
         author: "PhoneBurner Team Snake Eater",
-        color: "#ef722e",
+        color: "#ff0000",
         head: "default",
         tail: "default"
     })
