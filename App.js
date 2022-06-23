@@ -1,4 +1,3 @@
-import SnakeRequest from "./SnakeRequest.js";
 import Move from "./Move.js";
 
 class App {
@@ -8,10 +7,7 @@ class App {
     }
 
     move(body) {
-        const requestBody = new SnakeRequest(body);
-        const getBoard = requestBody.board;
-
-        const mover = new Move(requestBody.mySnake, requestBody.allSnakes, requestBody.board);
+        const mover = new Move(body.you, body.board.snakes, body.board);
 
         return mover.getMove();
     }
