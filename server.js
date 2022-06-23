@@ -30,7 +30,14 @@ server.post('/start', (req, res) => {
 
 server.post('/move', (req, res) => {
     console.log(`POST /move`, req.body);
-    res.json(app.move(req.body));
+    const move = app.move(req.body);
+
+    console.log(`Found Move: ${move}`);
+
+    res.json({
+        "move": move,
+        "shout": "I guess I'll go up then."
+    });
 })
 
 server.post('/end', (req, res) => {
