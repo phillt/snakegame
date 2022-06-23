@@ -7,11 +7,20 @@ const server = express()
 
 const app = new App();
 
+// Run Tunnel to expose
+// ngrok http -hostname=beakon.ngrok.io 3000
+
 server.use(bodyParser.json());
 
 server.get('/', (req, res) => {
     console.log(`GET /`, req.body);
-    res.send('OK');
+    res.json({
+        apiversion: "1",
+        author: "PhoneBurner Team Snake Eater",
+        color: "#ef722e",
+        head: "default",
+        tail: "default"
+    })
 });
 
 server.post('/start', (req, res) => {
